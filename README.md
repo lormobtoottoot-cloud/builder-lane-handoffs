@@ -1,54 +1,66 @@
-﻿# Builder Lane Handoffs
+# Builder Lane Handoffs
 
-Safe builder lane files for two separate builders:
+Public builder portal for safe Spark and TradeCore UI onboarding.
 
-- Spark Builder Lane for Aunt
-- TradeCore UI Lane for younger aunt / sister
+## Live Homepage
 
-## Open Interfaces Directly
+https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/
 
-After GitHub Pages is enabled, use these direct interface links:
+## Live Interfaces
 
-- [Open Spark Builder Start Interface](https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/spark/builder-start-interface/spark-builder-start.html)
-- [Open TradeCore UI Start Interface](https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/tradecore-ui/index.html)
+- Spark: https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/spark/builder-start-interface/spark-builder-start.html
+- TradeCore UI: https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/tradecore-ui/index.html
 
-## Download Packages
+## Download Links
 
-Use these direct download links:
+- Spark Builder Lane: https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/raw/master/packages/Spark_Builder_Lane.zip
+- TradeCore UI Lane: https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/raw/master/packages/TradeCore_UI_Lane.zip
+- All Builder Files: https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/raw/master/packages/Builder_Lanes_All.zip
 
-- [Download Spark_Builder_Lane.zip](https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/raw/master/packages/Spark_Builder_Lane.zip)
-- [Download TradeCore_UI_Lane.zip](https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/raw/master/packages/TradeCore_UI_Lane.zip)
-- [Download Builder_Lanes_All.zip](https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/raw/master/packages/Builder_Lanes_All.zip)
+## Builder Assignments
 
-## Browse Files
+Spark Builder Lane:
 
-- [Spark lane files](https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/tree/master/spark)
-- [TradeCore UI lane files](https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/tree/master/tradecore-ui)
-- [Package files](https://github.com/lormobtoottoot-cloud/builder-lane-handoffs/tree/master/packages)
+- Builder: Aunt
+- Purpose: Continue Spark Live Engine later.
+- Open first: `spark/builder-start-interface/spark-builder-start.html`
+- Instructions: `instructions/SPARK_BUILDER_INSTRUCTIONS.md`
 
-## Open First
+TradeCore UI Builder Lane:
 
-Spark builder opens:
+- Builder: younger aunt / sister
+- Purpose: Continue TradeCore interface development safely.
+- Open first: `tradecore-ui/index.html`
+- Instructions: `instructions/TRADECORE_UI_BUILDER_INSTRUCTIONS.md`
 
-```text
-spark/builder-start-interface/spark-builder-start.html
-```
+## Instructions
 
-TradeCore UI builder opens:
+- `instructions/START_HERE.md`
+- `instructions/SPARK_BUILDER_INSTRUCTIONS.md`
+- `instructions/TRADECORE_UI_BUILDER_INSTRUCTIONS.md`
+- `instructions/HOW_TO_DOWNLOAD_AND_BUILD.md`
+- `instructions/SAFETY_RULES.md`
 
-```text
-tradecore-ui/index.html
-```
+## Safety Rules
 
-## Safety Boundaries
+This repository is static and mock-only.
 
-This repository intentionally excludes:
+Do not add:
 
-- CORE_Vault_RE_200_Blocks
-- Operator server files
-- CellCore PC Flow Agent files
-- Wallet, vault, bank, security, backend, terminal, or API-key files
+- secrets, passwords, private tokens, or API keys
+- live trading
+- wallet movement
+- wallet, vault, bank, or security modules
+- backend trading logic
+- terminal execution
+- CORE Vault files
 
-TradeCore is UI mock only. No live trading, no Coinbase keys, no API keys, no wallet movement, no backend trading logic, and no terminal logic.
+Allowed work:
 
-Spark remains a separate lane. The starter interface is a mock sandbox and does not modify the Spark production source.
+- mock UI
+- starter pages
+- instructions
+- CSS polish
+- disabled buttons
+- fake data
+- notes and checklists

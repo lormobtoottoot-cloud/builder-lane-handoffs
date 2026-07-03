@@ -5,7 +5,7 @@ This lane is UI mock only.
 ## Allowed
 
 - Static HTML/CSS/JS mock interface
-- Mock data objects in pp.js
+- Mock data objects in `app.js`
 - Disabled mock-only buttons
 - Risk warnings
 - Frontend layout experiments
@@ -19,8 +19,6 @@ This lane is UI mock only.
 - Wallet movement
 - Backend trading logic
 - Terminal logic
-- /api/terminal/run
-- Port 4317
 - CORE Vault modification
 - Wallet, vault, bank, security, IPC, bridge, or terminal files
 
@@ -28,6 +26,6 @@ This lane is UI mock only.
 
 The interface must visibly state:
 
-``text
+```text
 UI mock only - no live trading.
-``
+```
