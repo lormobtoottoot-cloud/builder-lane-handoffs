@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeCore UI Lane</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="trade-shell">
+      <header class="topbar">
+        <div>
+          <p class="label">Safe UI-only lane</p>
+          <h1>TradeCore</h1>
+          <p>UI mock only - no live trading.</p>
+        </div>
+        <section class="safety-card">
+          <strong>Execution disabled</strong>
+          <span>No keys. No wallet movement. No real trades.</span>
+        </section>
+      </header>
+
+      <section id="riskWarnings" class="risk-banner" aria-label="Risk warnings"></section>
+
+      <section class="layout-grid">
+        <article class="panel portfolio-panel">
+          <div class="panel-head"><span class="label">Portfolio</span><strong id="portfolioTotal">$0.00</strong></div>
+          <div id="portfolioList" class="asset-list"></div>
+        </article>
+
+        <article class="panel watchlist-panel">
+          <div class="panel-head"><span class="label">Watchlist</span><strong>mock prices</strong></div>
+          <div id="watchlist" class="watchlist"></div>
+        </article>
+
+        <article class="panel chart-panel">
+          <div class="panel-head"><span class="label">Trading chart layout</span><strong>visual only</strong></div>
+          <div class="mock-chart" aria-label="Mock trading chart">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="mock-actions">
+            <button type="button" disabled>MOCK ONLY Buy</button>
+            <button type="button" disabled>MOCK ONLY Sell</button>
+          </div>
+        </article>
+
+        <article class="panel connector-panel">
+          <div class="panel-head"><span class="label">Coinbase mock connection</span><strong id="coinbaseStatus">disconnected</strong></div>
+          <p>No real Coinbase keys. This card is a design placeholder only.</p>
+          <div id="connectors" class="connector-list"></div>
+        </article>
+
+        <article class="panel agent-panel">
+          <div class="panel-head"><span class="label">AI agent panel</span><strong>analysis only</strong></div>
+          <div id="agentMessages" class="agent-messages"></div>
+        </article>
+
+        <article class="panel transactions-panel">
+          <div class="panel-head"><span class="label">Recent mock transactions</span><strong>static</strong></div>
+          <div id="transactions" class="transactions"></div>
+        </article>
+
+        <article class="panel settings-panel">
+          <div class="panel-head"><span class="label">Settings / API safety</span><strong>locked</strong></div>
+          <ul>
+            <li>No API key fields are active.</li>
+            <li>No secret storage exists.</li>
+            <li>No backend endpoint exists.</li>
+            <li>No order execution exists.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

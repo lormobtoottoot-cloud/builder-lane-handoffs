@@ -1,0 +1,38 @@
+﻿:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #07090d;
+  color: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #07090d; }
+button, textarea { font: inherit; }
+button { cursor: pointer; }
+
+.spark-shell { min-height: 100vh; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.hero, .rule-strip, .panel { border: 1px solid #243244; background: #0d131c; }
+.hero { display: flex; justify-content: space-between; gap: 20px; padding: 22px; align-items: stretch; }
+.hero h1 { margin: 4px 0; font-size: clamp(2.2rem, 7vw, 5rem); line-height: .92; letter-spacing: 0; }
+.hero p { max-width: 720px; color: #b9c6d6; line-height: 1.55; }
+.label { color: #8be0cf; font-size: .75rem; text-transform: uppercase; font-weight: 800; }
+.status-card { min-width: 260px; border: 1px solid #3f5f76; background: #101c27; padding: 16px; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.status-card span, .status-card small { color: #94a6b9; }
+.status-card strong { color: #f5f9ff; }
+.rule-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: #243244; }
+.rule-strip span { background: #0d131c; padding: 12px; color: #d8e2ee; font-size: .86rem; }
+.grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; }
+.panel { padding: 16px; min-height: 220px; }
+.panel-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 12px; }
+.panel-head strong { color: #f3d486; }
+dl { display: grid; gap: 10px; margin: 0 0 14px; }
+dl div { display: flex; justify-content: space-between; border-top: 1px solid #243244; padding-top: 10px; }
+dt { color: #8fa1b5; text-transform: uppercase; font-size: .72rem; }
+dd { margin: 0; color: #f2f6fb; }
+button { border: 1px solid #3e6a78; background: #183341; color: #f7fbff; padding: 10px 12px; font-weight: 800; }
+button:hover { border-color: #80e8d6; background: #1d4a55; }
+.event-log, .checklist { margin: 0; padding-left: 20px; color: #c6d2df; line-height: 1.55; }
+.event-log li { margin-bottom: 8px; }
+.notes-panel { grid-column: 1 / -1; }
+textarea { width: 100%; resize: vertical; border: 1px solid #2f4054; background: #070b10; color: #f7fbff; padding: 12px; line-height: 1.5; }
+@media (max-width: 820px) { .hero, .grid { grid-template-columns: 1fr; display: grid; } .rule-strip { grid-template-columns: 1fr; } .status-card { min-width: 0; } }

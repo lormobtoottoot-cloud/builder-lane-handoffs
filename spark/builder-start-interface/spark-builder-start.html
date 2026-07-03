@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark Builder Start Interface</title>
+    <link rel="stylesheet" href="spark-builder-start.css" />
+  </head>
+  <body>
+    <main class="spark-shell">
+      <header class="hero">
+        <div>
+          <p class="label">Starter mock sandbox</p>
+          <h1>Spark Live Engine</h1>
+          <p>Safe visual starting point for v1.1 Agent-Observed Runtime. The real Spark source remains untouched.</p>
+        </div>
+        <section class="status-card" aria-label="Spark status">
+          <span>Current focus</span>
+          <strong>v1.1 Agent-Observed Runtime</strong>
+          <small>Mock controls only</small>
+        </section>
+      </header>
+
+      <section class="rule-strip" aria-label="Spark builder rules">
+        <span>Single-file Spark source remains untouched.</span>
+        <span>Snapshot-first workflow required.</span>
+        <span>No React/Vite conversion.</span>
+        <span>No rewrite.</span>
+      </section>
+
+      <section class="grid">
+        <article class="panel observer-panel">
+          <div class="panel-head">
+            <span class="label">Runtime Observer</span>
+            <strong id="observerState">idle</strong>
+          </div>
+          <dl>
+            <div><dt>Input</dt><dd id="inputState">waiting</dd></div>
+            <div><dt>Materialization</dt><dd id="materialState">stable</dd></div>
+            <div><dt>Active layer</dt><dd id="layerState">workspace shell</dd></div>
+            <div><dt>Shell state</dt><dd id="shellState">preserved</dd></div>
+          </dl>
+          <button id="observeButton" type="button">Mock Observe Runtime</button>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <span class="label">Event Log</span>
+            <strong>local only</strong>
+          </div>
+          <ul id="eventLog" class="event-log">
+            <li>Starter interface loaded. No Spark source files touched.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <span class="label">Snapshot Status</span>
+            <strong id="snapshotState">not saved</strong>
+          </div>
+          <p>Mock snapshot status helps the builder remember the real Spark rule: snapshot before edits.</p>
+          <button id="snapshotButton" type="button">Mock Save Snapshot</button>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <span class="label">Validation Checklist</span>
+            <strong id="validationState">pending</strong>
+          </div>
+          <ul class="checklist">
+            <li>Read CODEX_FLOW</li>
+            <li>Preserve single-file runtime</li>
+            <li>Change one requested subsystem only</li>
+            <li>Run validation after edits</li>
+          </ul>
+          <button id="validateButton" type="button">Mock Validate</button>
+        </article>
+
+        <article class="panel notes-panel">
+          <div class="panel-head">
+            <span class="label">Builder Notes</span>
+            <strong>Aunt lane</strong>
+          </div>
+          <textarea id="builderNotes" rows="8" placeholder="Write local planning notes here. These notes are not saved to disk."></textarea>
+        </article>
+      </section>
+    </main>
+    <script src="spark-builder-start.js"></script>
+  </body>
+</html>

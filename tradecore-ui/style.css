@@ -1,0 +1,31 @@
+﻿:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #080b0f; color: #f5f8fc; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: linear-gradient(135deg, rgba(38, 70, 83, .28), transparent 38%), #080b0f; }
+button { font: inherit; }
+.trade-shell { min-height: 100vh; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.topbar, .risk-banner, .panel { border: 1px solid #263444; background: rgba(13, 18, 25, .94); }
+.topbar { display: flex; justify-content: space-between; gap: 16px; padding: 18px; }
+.topbar h1 { margin: 4px 0; font-size: clamp(2.4rem, 8vw, 5.4rem); line-height: .9; letter-spacing: 0; }
+.topbar p { margin: 0; color: #c2cedc; }
+.label { color: #8ee7d0; text-transform: uppercase; font-size: .73rem; font-weight: 800; }
+.safety-card { min-width: 260px; border: 1px solid #6a5030; background: #1b1711; padding: 14px; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.safety-card strong { color: #f0c987; }
+.safety-card span { color: #d7c5aa; }
+.risk-banner { display: grid; gap: 8px; padding: 12px; color: #f0d59b; }
+.risk-item { border-left: 3px solid #d7a64a; padding-left: 10px; }
+.layout-grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 14px; }
+.panel { min-height: 210px; padding: 14px; }
+.panel-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 12px; }
+.panel-head strong { color: #f5fbff; }
+.asset-list, .watchlist, .connector-list, .agent-messages, .transactions { display: grid; gap: 8px; }
+.row { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid #263444; padding-top: 8px; color: #d8e3ef; }
+.row small { display: block; color: #8fa1b4; }
+.chart-panel { grid-column: span 2; }
+.mock-chart { height: 260px; border: 1px solid #2f4051; background: linear-gradient(180deg, #0b1219, #071017); display: flex; align-items: end; gap: 10px; padding: 18px; }
+.mock-chart span { flex: 1; min-height: 30px; background: linear-gradient(180deg, #74e0cb, #2b6870); }
+.mock-chart span:nth-child(1) { height: 44%; } .mock-chart span:nth-child(2) { height: 68%; } .mock-chart span:nth-child(3) { height: 38%; } .mock-chart span:nth-child(4) { height: 76%; } .mock-chart span:nth-child(5) { height: 56%; } .mock-chart span:nth-child(6) { height: 84%; }
+.mock-actions { display: flex; gap: 8px; margin-top: 10px; }
+.mock-actions button { border: 1px solid #3d4b5b; background: #141b24; color: #8292a6; padding: 10px 12px; cursor: not-allowed; }
+.settings-panel ul { margin: 0; padding-left: 20px; color: #c9d5e3; line-height: 1.6; }
+@media (max-width: 980px) { .layout-grid { grid-template-columns: 1fr 1fr; } .chart-panel { grid-column: span 2; } }
+@media (max-width: 680px) { .topbar { flex-direction: column; } .safety-card { min-width: 0; } .layout-grid, .chart-panel { grid-template-columns: 1fr; grid-column: auto; } .mock-chart { height: 190px; } }
