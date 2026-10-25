@@ -1,51 +1,13 @@
-# TradeCore UI Builder Instructions
+# TradeCore update instructions
 
-Builder: Younger aunt / sister
+The canonical TradeCore application is https://tradecore-fusion-mobile.dewytick512.chatgpt.site/
 
-Open first:
+The former UI-only mock in this repository has been retired. `tradecore-ui/index.html` redirects to the current app, and the TradeCore ZIP now contains link files rather than an old engine or interface.
 
-```text
-../tradecore-ui/index.html
-```
+1. Open the canonical app.
+2. On iPhone or iPad, use Safari **Share → Add to Home Screen**.
+3. Send change requests in **TradeCore Creation Space**, or open the app's **Creation Space** shortcut, select **TradeCore Fusion** in Sites, and choose **Edit**.
+4. Implement, verify, and publish requested changes to that same Sites project and URL. Do not create another TradeCore copy from this legacy folder.
+5. Keep existing saved accounts intact. All prices, balances, and orders remain simulated; real brokerage, wallet, and money movement are not included.
 
-## Goal
-
-Improve the TradeCore interface only.
-
-## What TradeCore UI Is
-
-TradeCore UI is a mock financial dashboard interface. It is not connected to real trading, real money, real Coinbase keys, wallets, or backend execution.
-
-## What To Do
-
-1. Open the TradeCore interface.
-2. Review dashboard, portfolio, watchlist, mock chart, Coinbase mock card, connector preview, AI panel, transactions, and settings/safety screen.
-3. Improve visual clarity, layout, spacing, buttons, wording, and mobile usability.
-4. Keep all data fake/mock.
-5. Leave risk warnings visible.
-
-## Do Not
-
-- Do not add real Coinbase keys.
-- Do not add real API keys.
-- Do not make real trades.
-- Do not move wallet funds.
-- Do not add backend trading logic.
-- Do not add terminal logic.
-- Do not use CORE Vault.
-- Do not enable buy/sell execution.
-
-## Allowed
-
-- UI layout changes
-- CSS polish
-- better wording
-- mock cards
-- mock status indicators
-- mobile design improvements
-- disabled mock buttons
-- fake chart visuals
-
-## Next Safe Task
-
-Improve the visual layout without changing the safety boundaries.
+The creation editor requires the owner's account. Opening the public trading app does not require ChatGPT login. This GitHub repository remains a static portal and Spark starter lane; it does not host the TradeCore backend.

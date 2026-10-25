@@ -1,44 +1,18 @@
-# How To Download And Build
+# Downloads and current apps
 
-There are three ways to use this repo.
+## Use the hosted apps
 
-## Option 1: Use Live GitHub Pages Links
+- Spark starter: https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/spark/builder-start-interface/spark-builder-start.html
+- Canonical TradeCore: https://tradecore-fusion-mobile.dewytick512.chatgpt.site/
 
-No download needed.
+TradeCore needs no download. In Safari, choose **Share → Add to Home Screen**. Its previous GitHub Pages URL redirects to the same current app.
 
-- Spark: https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/spark/builder-start-interface/spark-builder-start.html
-- TradeCore: https://lormobtoottoot-cloud.github.io/builder-lane-handoffs/tradecore-ui/index.html
+## Download files
 
-## Option 2: Download One Zip
+- `Spark_Builder_Lane.zip` contains the unchanged Spark starter.
+- `TradeCore_UI_Lane.zip` contains a link, redirect page, and instructions for the current hosted app. It does not contain the retired mock or another trading engine.
+- `Builder_Lanes_All.zip` contains Spark starter files and the same updated TradeCore link files.
 
-- `Spark_Builder_Lane.zip` for Spark
-- `TradeCore_UI_Lane.zip` for TradeCore
+On Windows, extract a ZIP with **Extract All**. For Spark, open `spark-builder-start.html`. For TradeCore, open `index.html` or `Open TradeCore.url`; either opens the canonical hosted app.
 
-Unzip it, then open the HTML file in a browser.
-
-## Option 3: Download All Files
-
-- `Builder_Lanes_All.zip`
-
-Unzip it, then open the correct folder.
-
-## Simple Windows Instructions
-
-1. Right-click the zip.
-2. Choose Extract All.
-3. Open the extracted folder.
-4. Double-click the main HTML file.
-
-## Main Files
-
-Spark:
-
-```text
-spark-builder-start.html
-```
-
-TradeCore:
-
-```text
-index.html
-```
+Future TradeCore changes belong in its existing **Creation Space**, not these retired mock files. Keep the stable app URL and saved accounts. No real money or external brokerage execution is included.
